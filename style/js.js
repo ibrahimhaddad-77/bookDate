@@ -58,7 +58,7 @@ btnOtherBook.addEventListener("click", (e) => {
     namePetian.value = "";
     age.value = "";
     gender.value = "";
-    age.value = "";
+    date.value = "";
     
 
     
