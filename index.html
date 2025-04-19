@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Tailwind</title>
+    <link rel="stylesheet" href="style/css.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black">
+    <div
+      class="box sm:w-[350px] md:w-[400px] lg:w-[450px] p-5 m-auto justify-center  mt-10 bg-gray-300"
+    >
+      <form action="" class="w-full flex flex-col ">
+        <input
+          type="text"
+          placeholder="اسم المريض"
+          class=" namePetian border border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring-0 focus:shadow-[0_0_10px_2px_rgba(59,130,246,0.7)]"
+        />
+
+        <br />
+
+        <input
+          type="number"
+          placeholder="السن"
+          class="age border border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring-0 focus:shadow-[0_0_10px_2px_rgba(59,130,246,0.7)]"
+        />
+
+        <br />
+
+        <select
+  name="gender"
+  id="gender"
+  class="gender border border-gray-300 rounded-md p-2 w-full bg-gray-100 focus:outline-none focus:ring-0 focus:shadow-[0_0_10px_2px_rgba(59,130,246,0.7)]"
+  
+>
+  <option value="" disabled selected hidden>-- اختر النوع --</option>
+  <option value="ذكر">ذكر</option>
+  <option value="انثى">أنثى</option>
+  <option value="لامواخذه">لا يفضل الاجابه😂</option>
+</select>
+
+        <br>
+        
+        <div class="dateInput flex-col items-center border p-4 text-gray-800 border-gray-600 rounded bg-blue-300  gap-3 flex ">
+          <label for="" class="">--اختر الموعد --</label>
+          <input
+          type="date"
+        
+          class="date border border-gray-300 w-full  rounded-md p-2 bg-gray-200 focus:outline-none focus:ring-0 focus:shadow-[0_0_10px_2px_rgba(59,130,246,0.7)]"
+        />
+        </div>
+        <div class="btns">
+          
+        <button class=" p-3 mt-3 bg-blue-500 text-white rounded" id="btnSummit">احجز الموعد ي عم</button>
+        <button class=" p-3 mt-3 bg-yellow-600 text-white rounded" id="btnOtherBook">حجز ااخر</button>
+        </div>
+      </form>
+
+      <div class="result px-3 py-4 border border-green-500 justify-center mt-2 bg-green-300 dis-none ">
+
+      </div>
+
+      <div class="alertMessege p-3 bg-red-300 rounded w-full justify-center mt-3 border border-red-600 text-red-800 dis-none">
+        <h4> قم ب ادخال البيانات بشكل كامل يعم ❌</h4>
+      </div>
+      <div class="alertAge p-3 bg-red-400 rounded w-full justify-center dis-none">
+        <h4> قم ب ادخال السن من 5 ال 60 <br>
+        او اتاكد من ادخال الاسم بشكل صحيح
+        </h4>
+      </div>
+    </div>
+
+    <script src="style/js.js"></script>
+  </body>
+</html>
